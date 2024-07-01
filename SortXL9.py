@@ -6,7 +6,7 @@ import random
 import subprocess
 import os
 # Ensure wkhtmltopdf is installed
-if not os.path.exists('/usr/local/bin/wkhtmltopdf'):
+if not os.path.exists('setup.sh'):
     st.warning("wkhtmltopdf is not installed. Running setup script...")
     subprocess.run(['bash', 'setup.sh'], check=True)
 import pdfkit
