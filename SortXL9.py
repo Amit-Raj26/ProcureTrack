@@ -3,6 +3,11 @@ import pandas as pd
 from datetime import datetime
 from io import BytesIO
 import random
+import os
+# Ensure wkhtmltopdf is installed
+if not os.path.exists('/usr/local/bin/wkhtmltopdf'):
+    st.warning("wkhtmltopdf is not installed. Running setup script...")
+    subprocess.run(['bash', 'setup.sh'], check=True)
 import pdfkit
 
 st.set_page_config(page_title="ProcureTrack", layout="wide")
