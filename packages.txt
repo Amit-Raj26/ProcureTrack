@@ -1,3 +1,7 @@
 libxrender1
 libxext6
 libfontconfig1
+libfreetype6
+libjpeg62-turbo
+libpng16-16
+libssl1.1
