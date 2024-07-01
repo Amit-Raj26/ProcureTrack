@@ -3,6 +3,7 @@ import pandas as pd
 from datetime import datetime
 from io import BytesIO
 import random
+import subprocess
 import os
 # Ensure wkhtmltopdf is installed
 if not os.path.exists('/usr/local/bin/wkhtmltopdf'):
