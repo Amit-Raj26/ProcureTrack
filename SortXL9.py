@@ -18,7 +18,7 @@ otp_placeholder = st.empty()
 
 # Initial username and password
 initial_username = 'admin'
-initial_password = 'default_password'
+initial_password = 'Rilfng@1234'
 
 # Session state initialization
 if 'logged_in' not in st.session_state:
@@ -291,13 +291,13 @@ def selection_page():
     col1, col2 = st.columns(2)
 
     with col1:
-        if st.button("Sensor Procurement", key="sensor_procurement", use_container_width=True):
+        if st.button("DGT Sensor Procurement", key="sensor_procurement", use_container_width=True):
             st.session_state.track_option = 'sensor_procurement'
             st.session_state.page = 'main'
             st.experimental_rerun()
 
     with col2:
-        if st.button("Sensor Replacement", key="sensor_replacement", use_container_width=True):
+        if st.button("DGT Sensor Replacement", key="sensor_replacement", use_container_width=True):
             st.session_state.track_option = 'sensor_replacement'
             st.session_state.page = 'main'
             st.experimental_rerun()
@@ -314,7 +314,7 @@ def main():
         """, unsafe_allow_html=True)
 
     # Define the HTML string
-    html_string = '<h1>ProcureTrack</h1>'
+    html_string = '<h1>DTA_DGT-SensorTrack</h1>'
     # Display the HTML using st.markdown
     st.markdown(html_string, unsafe_allow_html=True)
     st.markdown('<h2 class="subheader"><em>Automating Your Procurement Workflow</em></h2>', unsafe_allow_html=True)
